@@ -39,7 +39,17 @@ class SignUpPage extends StatelessWidget {
              
              child: textFormDeco(hintText: "username")),
          ),
-
+      InkWell(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Container(width: double.infinity,
+            height: 30,
+            color: Colors.black45,
+            child: Text("next"),
+            ),
+          ),
+          onTap: (){},
+        )
 
 
         ],),
