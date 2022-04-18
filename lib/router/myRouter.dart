@@ -9,7 +9,7 @@ class RouterProvider {
     final args = settings.arguments;
 
     switch (settings.name) {
-      case "/":
+      case "/main":
         return MaterialPageRoute(builder: (context) => BottomNavBar());
 
       case "/intrance":
