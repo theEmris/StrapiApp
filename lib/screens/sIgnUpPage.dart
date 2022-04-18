@@ -7,32 +7,43 @@ class SignUpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        
-        children: [
-          Container(
-            height: 30,
-            width: 300,
-            child:
-       textFormDeco(hintText: "email"),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           
-          ),
-       Container(
-          height: 30,
-            width: 300,
-         
-         child: textFormDeco(hintText: "password")),
-       Container(
-          height: 30,
-            width: 300,
-         
-         child: textFormDeco(hintText: "username")),
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 30,
+                width: 300,
+                child:
+         textFormDeco(hintText: "email"),
+              
+              ),
+            ),
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Container(
+              height: 30,
+                width: 300,
+             
+             child: textFormDeco(hintText: "password")),
+         ),
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Container(
+              height: 30,
+                width: 300,
+             
+             child: textFormDeco(hintText: "username")),
+         ),
 
 
 
-      ],),
+        ],),
+      ),
       
     );
   }

@@ -6,34 +6,45 @@ class IntrancePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          InkWell(
-            child: Container(
-              height: 30,
-              width: 300,
-              child: Text("Sign Up"),
-              color: Colors.black45,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            InkWell(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  alignment: Alignment.center,
+                  height: 30,
+                  width: 300,
+                  child: Text("Sign Up"),
+                  color: Colors.black45,
+                ),
+              ),
+              onTap: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, "/signUp", (route) => false);
+              },
             ),
-            onTap: () {
-              Navigator.pushNamedAndRemoveUntil(
-                  context, "signUp", (route) => false);
-            },
-          ),
-          InkWell(
-            child: Container(
-              height: 30,
-              width: 300,
-              child: Text("Sign In"),
-              color: Colors.greenAccent,
-            ),
-            onTap: () {
-              Navigator.pushNamedAndRemoveUntil(
-                  context, "signIn", (route) => false);
-            },
-          )
-        ],
+            InkWell(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  alignment: Alignment.center,
+                  height: 30,
+                  width: 300,
+                  child: Text("Sign In"),
+                  color: Colors.greenAccent,
+                ),
+              ),
+              onTap: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, "/signIn", (route) => false);
+              },
+            )
+          ],
+        ),
       ),
     );
   }
