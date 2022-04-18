@@ -1,11 +1,8 @@
-import 'dart:js';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/widgets/bottomNavBar.dart';
 
 class RouterProvider {
-  Route? onGenerateRoute(RouteSettings settings) {
+  Route?  onGenerateRoute(RouteSettings settings) {
     final args = settings.arguments;
 
     switch (settings.name) {
@@ -16,3 +13,9 @@ class RouterProvider {
     }
   }
 }
+
+
+
+
+
+
