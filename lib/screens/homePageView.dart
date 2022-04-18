@@ -9,7 +9,6 @@ class HomePageView extends StatelessWidget {
       appBar: AppBar(
         title: Text("home Page"),
       ),
-      
     );
   }
 }
